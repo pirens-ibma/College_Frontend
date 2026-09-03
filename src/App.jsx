@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact";
+import EntranceExams from "./pages/student corner/EntranceExams";
 
 function Home() {
   return (
@@ -22,7 +23,10 @@ function App() {
       <Routes>
 
         {/* HOME */}
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
         {/* CONTACT */}
         <Route
@@ -30,7 +34,14 @@ function App() {
           element={<Contact />}
         />
 
+        {/* ENTRANCE EXAMS */}
+          <Route
+          path="/student-corner/entrance-exams"
+          element={<EntranceExams />}
+        />
+
       </Routes>
+
 
     </BrowserRouter>
   );
