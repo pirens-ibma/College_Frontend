@@ -26,8 +26,16 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/mba" element={<MBA />} />
-        <Route path="/mba/faculty" element={<MBAFaculty />} />
+        <Route path="/department/mba/faculty" element={<MBAFaculty />} />
+        <Route path="/department/mba" element={<MBA />} />
+       <Route
+  path="/mba"
+  element={
+    <div className="p-10 text-3xl font-bold">
+      MBA ROUTE WORKING
+    </div>
+  }
+/>
 
       </Routes>
 
