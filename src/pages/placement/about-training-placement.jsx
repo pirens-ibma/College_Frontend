@@ -43,9 +43,9 @@ const AboutTrainingPlacement = () => {
       <div className="w-full bg-white py-10">
 
         {/* Heading */}
-        <h2 className="mb-10 text-center text-3xl font-bold text-[#0b2d4d] md:text-4xl">
-          Our Recruiters
-        </h2>
+       <h2 className="mb-10 text-center text-3xl font-bold text-[#0b2d4d] md:text-4xl">
+  Our Recruiters
+</h2>
 
 
         {/* Recruiters */}
