@@ -74,7 +74,7 @@ const Examination = () => {
             <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
 
             <a
-              href="/pdfs/mba-timetable.pdf"
+              href="https://exam.unipune.ac.in/index.html"
               target="_blank"
               className="text-2xl text-blue-500"
             >
