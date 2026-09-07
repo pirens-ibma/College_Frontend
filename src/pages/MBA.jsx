@@ -7,11 +7,26 @@ const quickLinks = [
   name: "MBA Faculty",
   link: "/department/mba/faculty",
 },
-  { name: "Specializations Offered", id: "specializations" },
-  { name: "MBA Syllabus", id: "mba-syllabus" },
-  { name: "Fees Structure", id: "fees-structure" },
-  { name: "Hostel Facility", id: "hostel-facility" },
-  { name: "Institute Location", id: "institute-location" },
+{
+  name: "Specializations Offered",
+  link: "/department/mba/specializations",
+},
+{
+  name: "MBA Syllabus",
+  link: "/documents/mba-syllabus.pdf",
+},
+{
+  name: "Fees Structure",
+  link: "/fees-structure",
+}, 
+{
+  name: "Hostel Facility",
+  link: "/hostel",
+},
+{
+  name: "Institute Location",
+  link: "/contact#map",
+}, 
 ];
 
 const specializations = [

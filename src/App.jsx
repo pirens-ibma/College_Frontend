@@ -2,10 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact";
 import MBA from "./pages/MBA";
 import MBAFaculty from "./pages/MBAFaculty";
-
+import MBASpecializations from "./pages/MBASpecializations";
+import FeesStructure from "./pages/FeesStructure";
+import Hostel from "./pages/Hostel";
 function Home() {
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -28,6 +30,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/department/mba/faculty" element={<MBAFaculty />} />
         <Route path="/department/mba" element={<MBA />} />
+        <Route path="/fees-structure" element={<FeesStructure />} />
+        <Route path="/department/mba/specializations" element={<MBASpecializations />}/>
+        <Route path="/hostel" element={<Hostel />} />
        <Route
   path="/mba"
   element={
@@ -35,7 +40,7 @@ function App() {
       MBA ROUTE WORKING
     </div>
   }
-/>
+/> 
 
       </Routes>
 

@@ -1,224 +1,215 @@
-import React from "react";
-
 const faculty = [
   {
     name: "Dr. N. U. Bankar",
     designation: "Professor",
     experience: "14 Years",
-    department: "MBA",
     qualification: "B.Sc., MBA, Ph.D., UGC-NET",
+    image: "/images/mba-faculty/dr-nu-bankar.png",
+    color: "#092f55",
   },
   {
     name: "Dr. M. A. Tamboli",
     designation: "Director, IBMA",
     experience: "14 Years",
-    department: "MBA",
     qualification: "BBA, MBA, DLL&LW, Ph.D.",
+    image: "/images/mba-faculty/mat.png",
+    color: "#0b8f50",
   },
   {
-    name: "Dr. R.B. Valave",
+    name: "Dr. R.B.Valave",
     designation: "HOD, MBA",
     experience: "10 Year 5 Months",
-    department: "MBA",
     qualification: "B.Sc., MBA, Ph.D.(Pursuing)",
+    image: "/images/mba-faculty/rbvalave.png",
+    color: "#347fd3",
   },
   {
     name: "Dr. S. R. Vikhe Patil",
     designation: "Assistant Professor",
     experience: "08 Years",
-    department: "MBA",
     qualification: "B.A., MBA, Ph.D.",
+    image: "/images/mba-faculty/srvikhe.png",
+    color: "#2bb5a9",
   },
   {
     name: "Dr. S. V. Bidgar",
     designation: "Assistant Professor",
     experience: "10 Years 9 Months",
-    department: "MBA",
     qualification: "BE, MBA, Ph.D.",
+    image: "/images/mba-faculty/svbidgar.png",
+    color: "#21b8d0",
   },
   {
     name: "Mr. P. D. Borhade",
     designation: "Assistant Professor",
     experience: "09 Years 9 Months",
-    department: "MBA",
     qualification:
       "B.Sc(Computer Science), MBA(Financial Management), Ph.D.(Pursuing)",
+    image: "/images/mba-faculty/pdborhade.png",
+    color: "#d747a3",
   },
   {
     name: "Mr. S. G. Dighe",
     designation: "Assistant Professor",
     experience: "17 Years",
-    department: "MBA",
     qualification: "B. Sc., M. Sc., MBA (MKTG MGMT & HRM)",
+    image: "/images/mba-faculty/sgdighe.png",
+    color: "#f0ba28",
   },
   {
     name: "Mr. Y. L. Aher",
     designation: "Assistant Professor",
     experience: "14 Years 11 Months",
-    department: "MBA",
     qualification: "BHMCT, MBA (HRM)",
+    image: "/images/mba-faculty/yla.png",
+    color: "#814080",
   },
   {
     name: "Ms. S. S. Bhandhari",
     designation: "Assistant Professor",
     experience: "10 Years 6 Months",
-    department: "MBA",
     qualification: "B.Com., MBA, Ph.D.(Pursuing)",
+    image: "/images/mba-faculty/ssbhandhari.png",
+    color: "#092f55",
   },
   {
     name: "Ms. B. S. Kale",
     designation: "Assistant Professor",
     experience: "08 Years",
-    department: "MBA",
     qualification: "B.Com., MBA",
+    image: "/images/mba-faculty/bskale.png",
+    color: "#0b8f50",
   },
   {
     name: "Ms. Pooja Parjane",
     designation: "Assistant Professor",
     experience: "05 Year",
-    department: "MBA",
     qualification: "BBA(CA), MBA",
+    image: "/images/mba-faculty/pooja.png",
+    color: "#347fd3",
   },
   {
-    name: "Dr. N.P. Awari",
+    name: "Dr. N.P.Awari",
     designation: "Assistant Professor",
     experience: "13 Year",
-    department: "MBA",
     qualification: "B.Pharm., MBA, Ph.D.",
+    image: "/images/mba-faculty/npawari.png",
+    color: "#2bb5a9",
   },
   {
-    name: "Mr. R.V. Dharmadhikari",
+    name: "Mr.R.V. Dharmadhikari",
     designation: "Assistant Professor",
     experience: "15 Years",
-    department: "MBA",
     qualification:
       "B.E.(E&TC), M.E.(VLSI & Embedded System), M.B.A.(Marketing)",
+    image: "/images/mba-faculty/rvdharmadhikari.png",
+    color: "#21b8d0",
   },
 ];
 
-function FacultyCard({ member }) {
-  return (
-    <div className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-
-      {/* PHOTO */}
-      <div className="flex h-64 items-center justify-center bg-gray-100">
-
-        <div className="flex h-40 w-40 items-center justify-center rounded-full bg-[#e5edf5] text-5xl font-bold text-[#14568a]">
-          {member.name
-            .replace("Dr. ", "")
-            .replace("Mr. ", "")
-            .replace("Ms. ", "")
-            .charAt(0)}
-        </div>
-
-      </div>
-
-      {/* DETAILS */}
-      <div className="p-5">
-
-        <h2 className="mb-3 text-lg font-bold text-[#0b3558]">
-          {member.name}
-        </h2>
-
-        <div className="space-y-2 text-sm leading-6 text-gray-700">
-
-          <p>
-            <span className="font-semibold text-gray-900">
-              Designation:
-            </span>{" "}
-            {member.designation}
-          </p>
-
-          <p>
-            <span className="font-semibold text-gray-900">
-              Experience:
-            </span>{" "}
-            {member.experience}
-          </p>
-
-          <p>
-            <span className="font-semibold text-gray-900">
-              Department:
-            </span>{" "}
-            {member.department}
-          </p>
-
-          <p>
-            <span className="font-semibold text-gray-900">
-              Qualification:
-            </span>{" "}
-            {member.qualification}
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-  );
-}
-
 function MBAFaculty() {
   return (
-    <div className="min-h-screen bg-white">
+    <main className="bg-white min-h-screen">
 
-      {/* ==================================================
-          PAGE TITLE
-      ================================================== */}
+      {/* Page Heading */}
+      <section className="relative h-[25px] bg-[#14558b] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute right-0 top-0 h-full w-[180px]"
+          style={{
+            background:
+              "linear-gradient(135deg, transparent 25%, rgba(255,255,255,.35) 25%, rgba(255,255,255,.35) 27%, transparent 27%, transparent 50%, rgba(255,255,255,.25) 50%, rgba(255,255,255,.25) 52%, transparent 52%)",
+            backgroundSize: "45px 45px",
+          }}
+        />
 
-      <section className="bg-[#14568a]">
+        <h1 className="relative z-10 text-white text-[16px] font-bold">
+          MBA Faculty
+        </h1>
+      </section>
 
-        <div className="mx-auto max-w-7xl px-4 py-5">
+      {/* Main Faculty Area */}
+      <section className="max-w-[450px] mx-auto py-[14px]">
 
-          <h1 className="text-center text-2xl font-bold text-white md:text-4xl">
-            MBA Faculty
-          </h1>
+        <div className="flex gap-[10px]">
+
+          {/* Quick Link */}
+          <aside className="w-[95px] flex-shrink-0">
+            <div className="bg-[#f1f1f1] px-[8px] py-[10px]">
+              <h3 className="text-[#07559a] text-[9px] font-semibold mb-[10px]">
+                Quick Link
+              </h3>
+
+              <a
+                href="/department/mba/faculty"
+                className="block text-[#1684d4] text-[6px] mb-[9px]"
+              >
+                MBA Faculty Profile
+              </a>
+
+              <a
+                href="/department/mca/faculty"
+                className="block text-[#1684d4] text-[6px]"
+              >
+                MCA Faculty Profile
+              </a>
+            </div>
+          </aside>
+
+          {/* Faculty List */}
+          <div className="w-[310px]">
+
+            {faculty.map((person) => (
+              <div
+                key={person.name}
+                className="h-[78px] mb-[10px] flex items-center overflow-hidden"
+                style={{
+                  backgroundColor: person.color,
+                }}
+              >
+
+                {/* Faculty Image */}
+                <div className="w-[78px] h-[78px] flex-shrink-0 rounded-full overflow-hidden">
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Faculty Details */}
+                <div className="text-white pl-[14px] pr-[8px]">
+
+                  <h2 className="text-[8px] font-bold mb-[3px]">
+                    {person.name}
+                  </h2>
+
+                  <p className="text-[5.5px] leading-[9px]">
+                    <b>Designation:</b> {person.designation}
+                  </p>
+
+                  <p className="text-[5.5px] leading-[9px]">
+                    <b>Experience:</b> {person.experience}
+                  </p>
+
+                  <p className="text-[5.5px] leading-[9px]">
+                    <b>Department:</b> MBA
+                  </p>
+
+                  <p className="text-[5.5px] leading-[9px]">
+                    <b>Qualification:</b> {person.qualification}
+                  </p>
+
+                </div>
+
+              </div>
+            ))}
+
+          </div>
 
         </div>
 
       </section>
-
-
-      {/* ==================================================
-          CONTENT
-      ================================================== */}
-
-      <main className="mx-auto max-w-7xl px-4 py-10 md:px-6">
-
-        {/* PAGE HEADING */}
-
-        <div className="mb-8">
-
-          <h2 className="inline-block border-b-2 border-[#0b3558] pb-2 text-2xl font-bold text-[#0b3558]">
-            MBA Faculty Profile
-          </h2>
-
-          <p className="mt-4 text-gray-600">
-            Meet our experienced and qualified faculty members of the
-            Master of Business Administration department.
-          </p>
-
-        </div>
-
-
-        {/* ==================================================
-            FACULTY GRID
-        ================================================== */}
-
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-
-          {faculty.map((member, index) => (
-            <FacultyCard
-              key={index}
-              member={member}
-            />
-          ))}
-
-        </div>
-
-      </main>
-
-    </div>
+    </main>
   );
 }
 
