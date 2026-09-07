@@ -1,18 +1,16 @@
 const Examination = () => {
   return (
-    <main className="min-h-screen bg-gray-50 py-16 px-6">
+    <main className="min-h-screen bg-white">
 
-      <div className="max-w-6xl mx-auto">
-
-        <h1 className="text-4xl font-bold text-[#0b2d4d]">
-           Examination page
+      {/* Page Title */}
+      <div className="bg-[#14558a] py-5 text-center">
+        <h1 className="text-4xl font-bold text-white">
+          Examination Department
         </h1>
-
-        <p className="mt-4 text-gray-600">
-          Welcome to PIRENS IBMA Examination Page.
-        </p>
-
       </div>
+
+      
+      
 
     </main>
   );
