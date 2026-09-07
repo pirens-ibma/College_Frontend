@@ -29,7 +29,7 @@ const Examination = () => {
             </a>
 
             <a
-              href="/pdfs/examination-grievance.pdf"
+              href="/pdfs/examination-grievance-form.pdf"
               target="_blank"
               className="block text-blue-500 py-4 border-b"
             >
@@ -37,7 +37,7 @@ const Examination = () => {
             </a>
 
             <a
-              href="/pdfs/code-of-conduct.pdf"
+              href="/pdfs/examination-code-conduct.pdf"
               target="_blank"
               className="block text-blue-500 py-4"
             >
@@ -56,11 +56,12 @@ const Examination = () => {
 
             <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
 
-            <a
-              href="/pdfs/mca-timetable.pdf"
+            <a 
+              href="https://www.google.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-2xl text-blue-500"
-            >
+>
               MCA Time Table for Examination
             </a>
 
@@ -96,7 +97,22 @@ const Examination = () => {
               Performance Improvement Online Exam Form
             </a>
 
-            
+            {/* Photocopy & Revolution*/}
+            <h2 className="text-3xl font-bold text-[#0b2d4d] mt-16">
+              Photocopy and Revaluation
+            </h2>
+
+            <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
+
+            <a
+              href="/pdfs/performance-improvement.pdf"
+              target="_blank"
+              className="text-2xl text-blue-500"
+            >
+              Photocopy and Revaluation
+            </a>
+
+
 
           </div>
 
