@@ -105,7 +105,7 @@ const Examination = () => {
             <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
 
             <a
-              href="/pdfs/performance-improvement.pdf"
+              href="https://exampcr.unipune.ac.in/Student/Dashboard/LogintoSPS"
               target="_blank"
               className="text-2xl text-blue-500"
             >
