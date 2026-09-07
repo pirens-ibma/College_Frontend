@@ -46,7 +46,59 @@ const Examination = () => {
 
           </div>
 
-          
+          {/* Examination Details */}
+          <div className="md:col-span-2">
+
+            {/* MCA */}
+            <h2 className="text-3xl font-bold text-[#0b2d4d]">
+              MCA Exam Time Table
+            </h2>
+
+            <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
+
+            <a
+              href="/pdfs/mca-timetable.pdf"
+              target="_blank"
+              className="text-2xl text-blue-500"
+            >
+              MCA Time Table for Examination
+            </a>
+
+
+            {/* MBA */}
+            <h2 className="text-3xl font-bold text-[#0b2d4d] mt-16">
+              MBA Exam Time Table
+            </h2>
+
+            <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
+
+            <a
+              href="/pdfs/mba-timetable.pdf"
+              target="_blank"
+              className="text-2xl text-blue-500"
+            >
+              MBA Time Table for Examination
+            </a>
+
+
+            {/* Performance Improvement */}
+            <h2 className="text-3xl font-bold text-[#0b2d4d] mt-16">
+              Performance Improvement Online Exam Form
+            </h2>
+
+            <div className="w-52 border-b-2 border-[#0b2d4d] mt-3 mb-10"></div>
+
+            <a
+              href="/pdfs/performance-improvement.pdf"
+              target="_blank"
+              className="text-2xl text-blue-500"
+            >
+              Performance Improvement Online Exam Form
+            </a>
+
+            
+
+          </div>
 
         </div>
 
